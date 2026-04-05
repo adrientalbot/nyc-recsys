@@ -7,7 +7,8 @@ load_dotenv()
 API_KEY = os.getenv("GOOGLE_PLACES_API_KEY")
 URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
 
-def fetch_places(lat=40.71, lng=-74.00, radius=1000, place_type="restaurant"):
+
+def fetch_places(lat=40.7180, lng=-73.9571, radius=1500, place_type="bar"):
     if not API_KEY:
         raise ValueError("GOOGLE_PLACES_API_KEY not found in environment")
 
