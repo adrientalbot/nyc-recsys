@@ -51,3 +51,8 @@ uv run python train_and_score.py --refresh-data
 - If `data/fetched_places.json` is missing, `train_and_score.py` will fetch fresh data automatically.
 - The fetched data is cached so repeated scoring runs do not hit the Google API unless you request a refresh.
 - `data/Saved Places.json` is the saved-places source used to label and filter recommendations.
+
+## Next Steps
+
+- Remove the need to manually upload the saved-places JSON file by pulling that data directly from Google in a supported way.
+- Build a simple UI for running the scorer and viewing the ranked results.
